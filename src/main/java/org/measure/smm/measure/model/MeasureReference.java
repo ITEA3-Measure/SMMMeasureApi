@@ -8,9 +8,9 @@ public class MeasureReference {
 	
 	private String role;
 	
-	private Long expirationDelay;
-	
 	private int number;
+	
+	private String filter;
 	
 
 
@@ -23,14 +23,6 @@ public class MeasureReference {
 		this.measureRef = measureRef;
 	}
 
-	@XmlAttribute
-	public Long getExpirationDelay() {
-		return expirationDelay;
-	}
-
-	public void setExpirationDelay(Long expirationDelay) {
-		this.expirationDelay = expirationDelay;
-	}
 
 	@XmlAttribute
 	public int getNumber() {
@@ -41,6 +33,7 @@ public class MeasureReference {
 		this.number = number;
 	}
 
+	@XmlAttribute
 	public String getRole() {
 		return role;
 	}
@@ -48,4 +41,15 @@ public class MeasureReference {
 	public void setRole(String role) {
 		this.role = role;
 	}
+
+	@XmlAttribute
+	public String getFilter() {
+		return filter;
+	}
+
+	public void setFilter(String filter) {
+		this.filter = filter;
+	}
+	
+	
 }

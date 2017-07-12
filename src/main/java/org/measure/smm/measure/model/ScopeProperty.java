@@ -10,6 +10,10 @@ public class ScopeProperty {
 	
 	private String description;
 	
+	private ScopePropertyType type;
+	
+	private ScopePropertyEnum enumType;
+	
 	@XmlAttribute	
 	public String getName() {
 		return name;
@@ -30,5 +34,20 @@ public class ScopeProperty {
 	}
 	public void setDefaultValue(String defaultValue) {
 		this.defaultValue = defaultValue;
+	}
+	
+	@XmlAttribute
+	public ScopePropertyType getType() {
+		return type;
+	}
+	public void setType(ScopePropertyType type) {
+		this.type = type;
+	}
+	
+	public ScopePropertyEnum getEnumType() {
+		return enumType;
+	}
+	public void setEnumType(ScopePropertyEnum enumType) {
+		this.enumType = enumType;
 	}
 }

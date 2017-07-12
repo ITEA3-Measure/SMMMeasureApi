@@ -13,14 +13,10 @@ public class SMMMeasure {
 		
 	private MeasureType type;
 	
-	private MeasureUnite unite;
+	private MeasureUnit unit;
 	
 	private String description;
-	
-	private String callbackAdress;
-	
-	private String callbackLable;
-			
+				
 	private List<ScopeProperty> scopeProperties;
 	private List<MeasureReference> references;
 	
@@ -63,12 +59,12 @@ public class SMMMeasure {
 		this.scopeProperties = scopeProperties;
 	}
 
-	@XmlAttribute
-	public MeasureUnite getUnite() {
-		return unite;
+	public MeasureUnit getUnit() {
+		return unit;
 	}
-	public void setUnite(MeasureUnite unite) {
-		this.unite = unite;
+
+	public void setUnit(MeasureUnit unit) {
+		this.unit = unit;
 	}
 
 	public List<MeasureReference> getReferences() {
@@ -77,21 +73,5 @@ public class SMMMeasure {
 
 	public void setReferences(List<MeasureReference> references) {
 		this.references = references;
-	}
-
-	public String getCallbackAdress() {
-		return callbackAdress;
-	}
-
-	public void setCallbackAdress(String callbackAdress) {
-		this.callbackAdress = callbackAdress;
-	}
-
-	public String getCallbackLable() {
-		return callbackLable;
-	}
-
-	public void setCallbackLable(String callbackLable) {
-		this.callbackLable = callbackLable;
 	}
 }
