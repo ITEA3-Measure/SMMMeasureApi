@@ -11,5 +11,6 @@ public enum ScopePropertyType {
 	FLOAT,
 	DATE,
 	ENUM,
-	PASSWORD;
+	PASSWORD,
+	DESABLE;
 }

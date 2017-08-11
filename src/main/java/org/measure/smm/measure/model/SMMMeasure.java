@@ -16,7 +16,9 @@ public class SMMMeasure {
 	private MeasureUnit unit;
 	
 	private String description;
-				
+	
+	private String agentId;
+					
 	private List<ScopeProperty> scopeProperties;
 	private List<MeasureReference> references;
 	
@@ -24,7 +26,7 @@ public class SMMMeasure {
 		this.scopeProperties = new ArrayList<>();
 		this.references = new ArrayList<>(); 
 	}
-	
+
 	@XmlAttribute
 	public String getName() {
 		return name;
@@ -73,5 +75,13 @@ public class SMMMeasure {
 
 	public void setReferences(List<MeasureReference> references) {
 		this.references = references;
+	}
+
+	public String getAgentId() {
+		return agentId;
+	}
+
+	public void setAgentId(String agentId) {
+		this.agentId = agentId;
 	}
 }

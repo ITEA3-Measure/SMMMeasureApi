@@ -10,6 +10,10 @@ public class MeasureUnit {
 	private String name;
 	private List<MeasureUnitField> fields = new ArrayList<>();
 	
+	public MeasureUnit(){
+
+	}
+	
 	@XmlAttribute
 	public String getName() {
 		return name;
