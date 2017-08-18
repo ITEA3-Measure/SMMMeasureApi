@@ -20,6 +20,8 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
+import org.measure.smm.measure.model.FieldType;
+import org.measure.smm.measure.model.MeasureUnitField;
 import org.measure.smm.measure.model.SMMMeasure;
 
 public class MeasurePackager {
@@ -69,7 +71,24 @@ public class MeasurePackager {
 		if(metadataPath.toFile().exists()){
 			JAXBContext context = JAXBContext.newInstance(SMMMeasure.class);
 			Unmarshaller um = context.createUnmarshaller();
-			return (SMMMeasure) um.unmarshal(new FileReader(metadataPath.toFile()));
+			SMMMeasure  measure = (SMMMeasure) um.unmarshal(new FileReader(metadataPath.toFile()));
+			 
+			MeasureUnitField postDate = null;
+			for(MeasureUnitField field  : measure.getUnit().getFields()){
+				if(field.getFieldName().equals("postDate")){
+					postDate = field;
+					break;
+				}
+			}
+			
+			if(postDate == null){
+				postDate = new MeasureUnitField();
+				postDate.setFieldName("postDate");
+				postDate.setFieldType(FieldType.u_date);
+				measure.getUnit().getFields().add(postDate);
+			}
+			
+			return measure;
 		}
 		throw new FileNotFoundException();
 	}
