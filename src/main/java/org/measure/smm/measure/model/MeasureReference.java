@@ -6,14 +6,14 @@ public class MeasureReference {
 	
 	private String measureRef;
 	
+	private FieldType fieldType; 
+	
 	private String role;
 	
 	private int number;
 	
 	private String filter;
 	
-
-
 	@XmlAttribute
 	public String getMeasureRef() {
 		return measureRef;
@@ -49,6 +49,15 @@ public class MeasureReference {
 
 	public void setFilter(String filter) {
 		this.filter = filter;
+	}
+	
+	@XmlAttribute
+	public FieldType getFieldType() {
+		return fieldType;
+	}
+	
+	public void setFieldType(FieldType fieldType) {
+		this.fieldType = fieldType;
 	}
 	
 	

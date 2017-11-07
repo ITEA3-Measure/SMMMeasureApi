@@ -18,6 +18,10 @@ public class SMMMeasure {
 	private String description;
 	
 	private String agentId;
+	
+	private String category;
+	
+	private String provider;
 					
 	private List<ScopeProperty> scopeProperties;
 	private List<MeasureReference> references;
@@ -52,6 +56,25 @@ public class SMMMeasure {
 	public void setType(MeasureType type) {
 		this.type = type;
 	}
+	
+	@XmlAttribute
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	
+	
+	@XmlAttribute
+	public String getProvider() {
+		return provider;
+	}
+
+	public void setProvider(String provider) {
+		this.provider = provider;
+	}
 
 	public List<ScopeProperty> getScopeProperties() {
 		return scopeProperties;
@@ -84,4 +107,7 @@ public class SMMMeasure {
 	public void setAgentId(String agentId) {
 		this.agentId = agentId;
 	}
+
+
+	
 }
