@@ -10,7 +10,7 @@ import java.util.Map;
 import org.measure.smm.measure.api.IMeasurement;
 import org.measure.smm.measure.defaultimpl.measurements.DefaultMeasurement;
 
-public class MeasureLog implements Serializable{
+public class RemoteMeasureLog implements Serializable{
 
 	private static final long serialVersionUID = -2821791213393760528L;
 
@@ -37,7 +37,7 @@ public class MeasureLog implements Serializable{
 	private Date exectionDate;
 	
 	
-	public void setLog(MeasureLog log){
+	public void setLog(RemoteMeasureLog log){
 		this.success  = log.isSuccess();
 		this.mesurement  = log.getMesurement();		
 		this.executionTime  = log.getExecutionTime();	

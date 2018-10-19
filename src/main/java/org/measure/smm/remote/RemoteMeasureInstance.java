@@ -1,5 +1,6 @@
 package org.measure.smm.remote;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,13 +14,12 @@ public class RemoteMeasureInstance{
 		private String measureVersion;
 		
 		private String shedulingExpression;
-
+		
 		private Map<String, String>  properties = new HashMap<>();
 
 		public String getInstanceName() {
 			return instanceName;
 		}
-
 		
 		public Long getMeasureId() {
 			return measureId;

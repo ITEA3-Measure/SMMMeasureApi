@@ -10,6 +10,8 @@ public class RemoteMeasureInstanceList implements Serializable{
 	
 	private List<RemoteMeasureInstance> remoteInstances = new ArrayList<>();
 	
+	private List<RemoteMeasureExternal> singleExecutions = new ArrayList<>();
+	
 	public List<RemoteMeasureInstance> getRemoteInstances() {
 		return remoteInstances;
 	}
@@ -18,4 +20,11 @@ public class RemoteMeasureInstanceList implements Serializable{
 		this.remoteInstances = remoteInstances;
 	}
 
+	public List<RemoteMeasureExternal> getSingleExecutions() {
+		return singleExecutions;
+	}
+
+	public void setSingleExecutions(List<RemoteMeasureExternal> singleExecutions) {
+		this.singleExecutions = singleExecutions;
+	}
 }
