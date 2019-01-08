@@ -7,6 +7,7 @@ public class Layout {
 	private String width;
 	private String height;
 	private String color;
+	private String fontSize;
 	
 	@XmlAttribute
 	public String getWidth() {
@@ -24,6 +25,13 @@ public class Layout {
 		this.height = height;
 	}
 	
+	@XmlAttribute
+	public String getFontSize() {
+		return fontSize;
+	}
+	public void setFontSize(String fontSize) {
+		this.fontSize = fontSize;
+	}
 	@XmlAttribute
 	public String getColor() {
 		return color;

@@ -4,14 +4,24 @@ import javax.xml.bind.annotation.XmlAttribute;
 
 public class View {
 	
+	private String name;
+	private String description;
 	private ViewTypeEnum type;
 	private boolean autoRefresh;
 	private boolean isDefault;
-	
-	private String description;
 	private DataSource datasource;
 	private Layout layout;
 	
+	
+	@XmlAttribute
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	@XmlAttribute
 	public ViewTypeEnum getType() {
 		return type;

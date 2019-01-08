@@ -5,17 +5,18 @@ import java.util.List;
 
 public class Scope {
 	
-	private List<ScopeProperty> scopeProperties;
+	private List<ScopeProperty> property;
 		
 	public Scope(){
-		this.scopeProperties = new ArrayList<>();
+		this.property = new ArrayList<>();
 	}
 
-	public List<ScopeProperty> getScopeProperties() {
-		return scopeProperties;
+	public List<ScopeProperty> getProperty() {
+		return property;
 	}
 
-	public void setScopeProperties(List<ScopeProperty> scopeProperties) {
-		this.scopeProperties = scopeProperties;
+	public void setProperty(List<ScopeProperty> property) {
+		this.property = property;
 	}
+
 }
