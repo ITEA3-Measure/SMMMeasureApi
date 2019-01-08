@@ -25,10 +25,12 @@ public class SMMMeasure {
 					
 	private List<ScopeProperty> scopeProperties;
 	private List<MeasureReference> references;
+	private List<View> views;
 	
 	public SMMMeasure(){
 		this.scopeProperties = new ArrayList<>();
 		this.references = new ArrayList<>(); 
+		this.views = new ArrayList<>();
 	}
 
 	@XmlAttribute
@@ -106,6 +108,14 @@ public class SMMMeasure {
 
 	public void setAgentId(String agentId) {
 		this.agentId = agentId;
+	}
+
+	public List<View> getViews() {
+		return views;
+	}
+
+	public void setViews(List<View> views) {
+		this.views = views;
 	}
 
 
