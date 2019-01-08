@@ -23,14 +23,13 @@ public class SMMMeasure {
 	
 	private String provider;
 					
-	private List<ScopeProperty> scopeProperties;
+	private Scope scope;
 	private List<MeasureReference> references;
-	private List<View> views;
+	private Views views;
+
 	
 	public SMMMeasure(){
-		this.scopeProperties = new ArrayList<>();
 		this.references = new ArrayList<>(); 
-		this.views = new ArrayList<>();
 	}
 
 	@XmlAttribute
@@ -78,14 +77,6 @@ public class SMMMeasure {
 		this.provider = provider;
 	}
 
-	public List<ScopeProperty> getScopeProperties() {
-		return scopeProperties;
-	}
-
-	public void setScopeProperties(List<ScopeProperty> scopeProperties) {
-		this.scopeProperties = scopeProperties;
-	}
-
 	public MeasureUnit getUnit() {
 		return unit;
 	}
@@ -110,14 +101,19 @@ public class SMMMeasure {
 		this.agentId = agentId;
 	}
 
-	public List<View> getViews() {
+	public Scope getScope() {
+		return scope;
+	}
+
+	public void setScope(Scope scope) {
+		this.scope = scope;
+	}
+
+	public Views getViews() {
 		return views;
 	}
 
-	public void setViews(List<View> views) {
+	public void setViews(Views views) {
 		this.views = views;
 	}
-
-
-	
 }

@@ -8,7 +8,7 @@ public class View {
 	private boolean autoRefresh;
 	private boolean isDefault;
 	
-	private ViewDescription description;
+	private String description;
 	private DataSource datasource;
 	private Layout layout;
 	
@@ -36,14 +36,15 @@ public class View {
 	public void setDefault(boolean isDefault) {
 		this.isDefault = isDefault;
 	}
-	
-	public ViewDescription getDescription() {
+
+	public String getDescription() {
 		return description;
 	}
-	public void setDescription(ViewDescription description) {
+
+	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+
 	public DataSource getDatasource() {
 		return datasource;
 	}
