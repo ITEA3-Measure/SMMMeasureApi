@@ -41,9 +41,9 @@ public class DataSource {
 		return timeAggregation;
 	}
 
-	public void setTimeAggregation(String timeAggregation) {
-		this.timeAggregation = timeAggregation;
-	}
+	public void setTimeAggregation(String timeAggreation) {
+		this.timeAggregation = timeAggreation;
 
+	}
 
 }
