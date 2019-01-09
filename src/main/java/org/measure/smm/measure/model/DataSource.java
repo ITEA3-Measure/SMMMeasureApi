@@ -7,7 +7,7 @@ public class DataSource {
 	private String dataIndex;
 	private String dateIndex;
 	private String timePeriode;
-	private String timeAggreation;
+	private String timeAggregation;
 
 	@XmlAttribute
 	public String getDataIndex() {
@@ -37,12 +37,12 @@ public class DataSource {
 	}
 
 	@XmlAttribute
-	public String getTimeAggreation() {
-		return timeAggreation;
+	public String getTimeAggregation() {
+		return timeAggregation;
 	}
 
-	public void setTimeAggreation(String timeAggreation) {
-		this.timeAggreation = timeAggreation;
+	public void setTimeAggregation(String timeAggreation) {
+		this.timeAggregation = timeAggreation;
 	}
 
 }
