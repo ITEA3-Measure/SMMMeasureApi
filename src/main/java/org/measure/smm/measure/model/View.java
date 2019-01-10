@@ -11,6 +11,7 @@ public class View {
 	private boolean isDefault;
 	private DataSource datasource;
 	private Layout layout;
+	private String customData;
 	
 	
 	@XmlAttribute
@@ -69,5 +70,13 @@ public class View {
 	
 	public void setLayout(Layout layout) {
 		this.layout = layout;
+	}
+
+	public String getCustomData() {
+		return customData;
+	}
+
+	public void setCustomData(String customData) {
+		this.customData = customData;
 	}
 }

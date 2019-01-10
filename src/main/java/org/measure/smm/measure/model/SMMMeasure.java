@@ -23,7 +23,7 @@ public class SMMMeasure {
 	
 	private String provider;
 					
-	private Scope scope;
+	private List<ScopeProperty> scopeProperties;
 	private List<MeasureReference> references;
 	private Views views;
 
@@ -101,12 +101,12 @@ public class SMMMeasure {
 		this.agentId = agentId;
 	}
 
-	public Scope getScope() {
-		return scope;
+	public List<ScopeProperty> getScopeProperties() {
+		return scopeProperties;
 	}
 
-	public void setScope(Scope scope) {
-		this.scope = scope;
+	public void setScopeProperties(List<ScopeProperty> scopeProperties) {
+		this.scopeProperties = scopeProperties;
 	}
 
 	public Views getViews() {
