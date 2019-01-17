@@ -1,4 +1,4 @@
-package org.measure.smm.measurementapplication.model;
+package org.measure.smm.application.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -8,12 +8,13 @@ public class SMMApplication {
 	
 	private String name;
 	
-		
 	private String provider;
 	
 	private String description;
 
 	private Dashboards dashboards;
+	
+	private ApplicationMeasures measures;
 	
 	@XmlAttribute
 	public String getName() {
@@ -47,5 +48,13 @@ public class SMMApplication {
 	
 	public void setDashboards(Dashboards dashboards) {
 		this.dashboards = dashboards;
+	}
+
+	public ApplicationMeasures getMeasures() {
+		return measures;
+	}
+
+	public void setMeasures(ApplicationMeasures measures) {
+		this.measures = measures;
 	}
 }

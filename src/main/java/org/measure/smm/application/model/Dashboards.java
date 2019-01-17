@@ -1,4 +1,4 @@
-package org.measure.smm.measurementapplication.model;
+package org.measure.smm.application.model;
 
 import java.util.ArrayList;
 import java.util.List;
