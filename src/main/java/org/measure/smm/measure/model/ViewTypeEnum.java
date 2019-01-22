@@ -11,5 +11,6 @@ public enum ViewTypeEnum {
 	BAR,
 	AREA,
 	DATA,
-	TABLE
+	TABLE,
+	VALUE
 }
