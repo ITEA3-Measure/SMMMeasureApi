@@ -4,26 +4,26 @@ import javax.xml.bind.annotation.XmlAttribute;
 
 public class View {
 
-	private String name;
+	private String measure;
 
-	private String scheduling;
+	private String view;
 
 	
 	@XmlAttribute
-	public String getName() {
-		return name;
+	public String getMeasure() {
+		return measure;
 	}
 	
-	public void setName(String name) {
-		this.name = name;
+	public void setMeasure(String measure) {
+		this.measure = measure;
 	}	
 	
 	@XmlAttribute
-	public String getScheduling() {
-		return scheduling;
+	public String getView() {
+		return view;
 	}
 	
-	public void setScheduling(String scheduling) {
-		this.scheduling = scheduling;
+	public void setView(String view) {
+		this.view = view;
 	}
 }
