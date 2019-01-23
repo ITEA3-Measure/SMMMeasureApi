@@ -7,6 +7,8 @@ public class ApplicationMeasure {
 	private String name;
 	
 	private String scheduling;
+	
+	private String schedulingUnit;
 
 	@XmlAttribute
 	public String getName() {
@@ -17,13 +19,23 @@ public class ApplicationMeasure {
 		this.name = name;
 	}
 
+	@XmlAttribute
 	public String getScheduling() {
 		return scheduling;
 	}
-
-	@XmlAttribute
+	
 	public void setScheduling(String scheduling) {
 		this.scheduling = scheduling;
 	}
+
+	@XmlAttribute
+	public String getSchedulingUnit() {
+		return schedulingUnit;
+	}
+
+	public void setSchedulingUnit(String schedulingUnit) {
+		this.schedulingUnit = schedulingUnit;
+	}
+	
 	
 }
