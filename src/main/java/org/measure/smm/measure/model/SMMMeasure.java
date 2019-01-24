@@ -116,4 +116,15 @@ public class SMMMeasure {
 	public void setViews(Views views) {
 		this.views = views;
 	}
+	
+	
+	public ScopeProperty findPropertyByName(String name) {
+		for(ScopeProperty prop : scopeProperties) {
+			if(prop.getName().equals(name)) {
+				return prop;
+			}
+		}
+		
+		return null;
+	}
 }
